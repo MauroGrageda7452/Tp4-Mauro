@@ -7,14 +7,18 @@ export default function Home() {
 
 
   useEffect(() => {
-    async function getData() {
+    const interval = setInterval(() => {
+      getData();
+    }, 2000); // Polling cada 2 segundos
+
+    return () => clearInterval(interval);
+  }, []);
+
+  async function getData() {
         const res = await fetch('/pages/api');
         const data = await res.json();
         setContador(data.valor);
-    }
-
-    getData();
-  }, []);
+  }
 
   const incrementarContador = async () => {
     
