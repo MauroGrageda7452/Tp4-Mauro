@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 //import { fetchSave } from "./services/contador";
 
 export default function Home() {
-  const [contador, setContador] = useState<number>(0);
+  const [contador, setContador] = useState<number | null>(null);
 
 
   useEffect(() => {
