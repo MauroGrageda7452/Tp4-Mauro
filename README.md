@@ -1,16 +1,36 @@
-Trabajo práctico 4
-==================
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Puesta en producción e integración
-==================================
+## Getting Started
 
+First, run the development server:
 
-Realizar la aplicación A o B. La aplicación realizada usando tecnologías vistas en clase y debe contar con conexión a una base de datos y ser accesible desde la internet. Cualquier dominio o subdominio de DNS es aceptable, al igual que cualquier host que permita correr la aplicación.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Aplicación A (100 puntos):
-Una pantalla con un botón que muestre un número. Dicho número viene desde la base de datos y es un contador, compartido entre todos los usuarios de la aplicación. Al apretar el botón, el contador se incrementará. Es aceptable que haya un delay de hasta 2s entre el valor mostrado y el valor real, incluso cuando hay más de un usuario simultáneo.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Aplicación B (150 puntos):
-Una pantalla, responsive y pensada para ser utilizada desde un celular, donde se pueden agregar contadores, seleccionando un color al momento de agregarlo. Pueden haber hasta 10 contadores en simultáneo, haciendo scroll si se supera el alto de la pantalla. Los valores de estos contadores, y la presencia y color de estos debe ser persistidos en una db, y sincronizados entre todos los usuarios de la aplicación.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
